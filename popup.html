@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>-</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div id="main">
+            <form action="#" spellcheck="false">
+
+                <div id="type"></div>
+
+                <div id="buttons">
+                    <button type="button" id="reload" class="button3">Reload</button>
+                    <button type="button" id="import" class="button1">Import Saved</button>
+						 <button type="button" id="download" class="button4">Save</button>
+                    <button type="button" id="clear" class="button2">Delete All Saved Data</button>
+						 <div class="infoo">
+						 <td class="td-icon minus"><img src="img/minus.png"> = Delete   </td>
+						 <td class="td-icon open"><img src="img/open.png"> = View</td>
+							 </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div id="table">
+                    <!--<p>Loading...</p>
+                    <table class="localstorage"><thead><tr><th class="td-nome">Name</th><th class="td-value" colspan="3">Value</th></tr></thead><tbody><tr><td class="td-nome"><input type="text" value="dtnpi" data-key="dtnpi" readonly=""></td><td class="td-value"><input type="text" value="[]" readonly=""></td><td class="td-icon minus"><img src="img/minus.png"></td><td class="td-icon open"><img src="img/open.png"></td></tr></tbody></table>-->
+                </div>
+            </form>
+			  <div id="auth"><p><b>Note:</b> Sync must be enabled for this extension to work!</p>
+			 <p><b>Note:</b> Localstorage and Sessionstorage are saved separately, so you have to save and import them separately by clicking the <b>L</b> or <b>S</b> icon.</p>
+			 <p><b>Note:</b> All of the options only apply to the current website.</p>
+			 </div>
+			  <div id="mark_rober" style="display:none"><hr>
+			 <a href="https://www.youtube.com/channel/UCY1kMZp36IQSyNx_9h4mpCg?sub_confirmation=1" class="mark-rober" target="_blank"><h2>Please Subscribe to my favorite youtuber! Mark Rober!</h2></a>
+		 </div>
+        </div>
+        <div id="json">
+            <button class="button5" id="back">❮</button>
+            <pre id="code"></pre>
+        </div>
+        <div id="loading"></div>
+		  <div id="errorr" style="display:none">
+			  <p class="error">Error! There could be to much data to sync!</p>
+		 </div>
+        <script src="jquery.js"></script>
+		  <script src="background.js"></script>
+        <script src="script.js"></script>
+		 
+    </body>
+</html>

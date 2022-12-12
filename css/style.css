@@ -1,0 +1,363 @@
+/* CSS reset ---------------------------------------------------------------- */
+body, div, p, img,
+form, input, button {
+    padding: 0;
+    margin: 0;
+    font: inherit
+}
+
+input {
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    background-color: #FFF;
+	 -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+	 cursor:default;
+}
+
+img, iframe {
+    border: 0;
+    vertical-align: middle
+}
+
+.clear {
+    clear: both
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+
+* {
+    box-sizing: border-box
+}
+
+:focus {
+    outline-color: #0A2BED
+}
+/* Fim CSS reset ------------------------------------------------------------ */
+
+
+body {
+    margin: 0;
+    padding: 5px;
+    width: 737px;
+    font: 13px droid sans, segoe ui, ubuntu, arial, sans serif
+}
+
+#main {
+    display: block
+}
+
+#json {
+    display: none
+}
+
+#loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    opacity: .8
+}
+
+#type {
+	color: #888;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+    float: left;
+    font-weight: bold;
+}
+
+#type.localstorage {
+    background-color: #FFEB3B;
+    border: 2px solid #888
+}
+
+#type.sessionstorage {
+    background-color: #B2FF59;
+    border: 2px solid #888
+}
+
+#buttons {
+    margin-left: 15px;
+    float: left
+}
+
+button {
+  background-color: #2196F3; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.infoo {
+  background-color: white; 
+  border: none;
+  color: black;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+
+.infooo {
+  background-color: white; 
+  border: none;
+  padding: 3px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #2196F3;
+}
+
+.button1:hover {
+  background-color: #2196F3;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.button2:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f7f028;
+}
+
+.button3:hover {
+  background-color: #f7f028;
+  color: #434543;
+}
+
+.button4 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #1e9e02;
+}
+
+.button4:hover {
+  background-color: #1e9e02;
+  color: white;
+}
+
+.button5 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #86009e;
+}
+
+.button5:hover {
+  background-color: #86009e;
+  color: white;
+}
+
+#auth {
+  padding: 4px;	
+}
+
+button:active {
+    position: relative;
+    top: 1px
+}
+
+button:focus {
+    outline: none;
+}
+
+table {
+	border-radius: 4px;
+}
+
+th {
+    padding: 5px;
+    font-weight: normal;
+	border-radius: 4px;
+}
+
+table.localstorage,table.sessionstorage{
+width: 100%;
+}
+
+table.localstorage th {
+    background-color: #FFF59D
+}
+
+table.sessionstorage th {
+    background-color: #CCFF90
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 7px;
+    border: 0;
+	 -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+	 cursor:default;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+th, td {
+	border-radius: 4px;
+    border: 1px solid #DDD
+}
+
+.td-nome {
+    width: 189px
+}
+
+.td-value {
+    width: 410px
+}
+
+.td-icon {
+    width: 30px;
+    text-align: center
+}
+
+td.td-icon {
+    cursor: pointer
+}
+
+p {
+    font-size: 15px;
+    font-style: italic
+}
+
+.localstorage-i {
+    color: #E65100;
+	border: 2px solid #E65100;
+	animation-name: hove;
+	animation-iteration-count: infinite;
+	animation-duration: 1.5s;
+	animation-direction: alternate-reverse;
+}
+
+.sessionstorage-i {
+    color: #33691E;
+	border: 2px solid #33691E;
+	animation-name: hove2;
+	animation-iteration-count: infinite;
+	animation-duration: 1.5s;
+	animation-direction: alternate-reverse;
+}
+
+@keyframes hove {
+  from {background-color: white;color: black;}
+  to {background-color: #E65100;color: white;}
+}
+
+@keyframes hove2 {
+  from {background-color: white;color: black;}
+  to {background-color: #33691E;color: white;}
+}
+
+@keyframes hove3 {
+  from {background-color: white;color: black;}
+  to {background-color: #d50000;color: white;}
+}
+
+p.error {
+    color: #d50000;
+	border: 2px solid #d50000;
+	animation-name: hove3;
+	animation-iteration-count: infinite;
+	animation-duration: 1.5s;
+	animation-direction: alternate-reverse;
+	background-color: white; 
+  border: none;
+  padding: 3px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
+
+#back {
+    position: fixed;
+    top: 2px;
+    right: 2px
+}
+
+#code {
+    margin-top: 30px;
+    white-space: pre-wrap;
+    word-wrap: break-word
+}
+
+.string {
+    color: #DF0101
+}
+
+.number {
+    color: #0B610B
+}
+
+.boolean {
+    color: #5F04B4
+}
+
+.null {
+    color: #FF8000
+}
+
+.key {
+    color: #0000FF
+}
+
+hr{
+   border: 1px solid #888;
+}

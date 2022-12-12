@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "LocalStorage Sync",
+    "version": "3.9.3",
+    "description": "Sync local storage and session storage data from one computer to another!",
+    "icons": {
+        "16": "img/16x16.png",
+        "48": "img/48x48.png",
+        "128": "img/128x128.png"
+    },
+    "background": {
+  "scripts": ["jquery.js","script.js"]
+},
+    "offline_enabled": true,
+
+    "browser_action": {
+        "default_icon": "img/128x128.png",
+        "default_popup": "popup.html"
+    },
+	 "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": false
+  },
+    "incognito": "split",
+    "permissions": ["activeTab","storage","tabs"]
+}
